@@ -1,4 +1,5 @@
-const prompt = require("prompt-sync")({ sigint: true });
+let a = 1;
 
-let nombre= prompt("ingrese su nombre: ");
-console.log(`Hola ${nombre}!!!`);
+function ejemplo (a){
+    return a
+}
