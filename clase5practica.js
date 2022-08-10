@@ -1,4 +1,3 @@
-
 const prompt = require("prompt-sync")({ sigint: true });
 
 //Micro desafío 1 --> function test1(x,y){return y - x} --> va a devolver y - x;
@@ -28,3 +27,18 @@ let edad = prompt('ingrese la edad de su perro: ');
 let edadPerro = edad => console.log(edad * 7);
 
 edadPerro(edad);
+
+// Crear una función que calcule el valor de tu hora de trabajo, introduciendo tu sueldo mensual como parámetro.
+let sueldo = prompt('ingrese su sueldo: ');
+let horaTrabajo = sueldo => console.log(sueldo / 40);
+
+horaTrabajo(sueldo);
+
+// Crear la función calculadorIMC() que reciba la altura en metros y el peso en kilogramos y calcule el IMC de una persona.
+let peso = prompt('ingrese su peso (en kg): ')
+let altura = prompt('ingrese su altura (en mts): ')
+let calculadorIMC= (peso,altura) => console.log(peso/(altura^2));
+
+calculadorIMC(peso,altura);
+
+// Crear una función que recibe un string en minúscula, lo convierta a mayúsculas y lo retorne.
