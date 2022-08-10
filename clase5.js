@@ -19,11 +19,8 @@ saludar2('ignacio');
 
 
 let nombre = prompt('escribir nombre: ');
-function saludar3(nombre){
-console.log(`hola ${nombre}, tanto tiempo sin verte.`);
-}
 
-saludar3(nombre);
+saludar2(nombre);
 
 
 //Micro desafío 1 --> function test1(x,y){return y - x} --> va a devolver y - x;
