@@ -42,3 +42,18 @@ let calculadorIMC= (peso,altura) => console.log(peso/(altura^2));
 calculadorIMC(peso,altura);
 
 // Crear una función que recibe un string en minúscula, lo convierta a mayúsculas y lo retorne.
+let minuscula = prompt('ingrese un string en minuscula: ');
+console.log(minuscula.toUpperCase());
+
+//Crear una función que recibe un parámetro y devuelve qué tipo de dato es ese parámetro.
+let parametro = 45;
+console.log(`el parametro es un: ${typeof parametro}`);
+
+//Crear una función que le pasamos el radio de un círculo y nos devuelve la circunferencia.
+let radioCirculo = prompt('ingrese el radio del circulo: ');
+let calculadorRadio = radioCirculo => console.log(`${Math.PI * radioCirculo * 2}`)
+
+calculadorRadio(radioCirculo);
+
+
+
