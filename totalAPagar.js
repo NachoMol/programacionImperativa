@@ -42,6 +42,6 @@ let totalAPagar = (vehiculo, litrosConsumidos) => {
 
 }
 
-let vehiculo = prompt('ingrese su tipo de vehiculo');
-let litrosConsumidos = prompt('ingrese los litros consumidos');
+let vehiculo = prompt('ingrese su tipo de vehiculo: ');
+let litrosConsumidos = Number(prompt('ingrese los litros consumidos: '));
 console.log(totalAPagar(vehiculo,litrosConsumidos));
