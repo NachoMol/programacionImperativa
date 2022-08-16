@@ -53,11 +53,11 @@ let sandwich = (base, pan, queso, tomate, lechuga, cebolla, mayonesa, mostaza) =
     }
     
     switch(pan){
-        case blanco:
+        case 'blanco':
             precio = precio + 50; 
         break;
 
-        case negro:
+        case 'negro':
             precio = precio + 60; 
         break;
 
@@ -93,4 +93,4 @@ let sandwich = (base, pan, queso, tomate, lechuga, cebolla, mayonesa, mostaza) =
 
     }
 
-    console.log(sandwich(carne, blanco, true, false, true, true, false, false));
+    console.log(sandwich('carne', 'blanco', true, false, true, true, false, false));
