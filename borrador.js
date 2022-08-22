@@ -1,9 +1,2 @@
-function tablaDeMultiplicar(numero) {
-	let i = 1;
-	 while(i <= 10){
-		console.log(numero*i);
-		i++;
-	 }
-}
-
-console.log(tablaDeMultiplicar(4));
+let numbers =[22, 33, 54, 66, 72]
+console.log(numbers[numbers.length])
