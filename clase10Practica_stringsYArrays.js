@@ -84,3 +84,18 @@ console.log(nuevoCatalogo(peliculas,peliculasAnimadas));
 //-------------------------------------------------------------------------------------------
 
 
+// Finalmente, te envían dos arrays con calificaciones que hacen distintos usuarios
+// del mundo sobre las películas con el siguiente formato:
+// const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+
+// 2
+
+// const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+// Te piden crear una función que compare las calificaciones e indique si son iguales
+// o diferentes. Te confirman que están en el orden adecuado y que solo traen
+// valores numéricos del 1 al 10.
+// pd: los elementos de los scores tanto de Asia como de Europa corresponden en
+// orden al del array resultante de combinar películas con películas animadas. Es
+// decir, el primer elemento del array de películas general corresponde al primer
+// elemento de asiaScores y al primer elemento de euroScores, y así sucesivamente.
+
