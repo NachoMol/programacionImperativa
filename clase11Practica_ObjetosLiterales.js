@@ -43,36 +43,30 @@ let banco = {
         }
     },
     deposito: function (titular,dinero){
-            for(let i= 0; i< this.clientes.length ; i++){
-            if(this.clientes[i].titularCuenta === titular){
-            this.clientes[i].saldoEnPesos += dinero;
+            let clienteEncontrado = this.consultarCliente(titular);
+            clienteEncontrado.saldoEnPesos += dinero;
             console.log(`Depósito realizado, su
-            nuevo saldo es: ${this.clientes[i].saldoEnPesos}`)
-            }
-            }
+            nuevo saldo es: ${clienteEncontrado.saldoEnPesos}`)
             },
     extraccion: function (titular,dinero){
-            for(let i= 0; i< this.clientes.length ; i++){
-            if(this.clientes[i].titularCuenta === titular){
-                if(this.clientes[i].saldoEnPesos >= dinero){
-                    this.clientes[i].saldoEnPesos -= dinero;
+                let clienteEncontrado = this.consultarCliente(titular);
+                if(clienteEncontrado.saldoEnPesos >= dinero){
+                    clienteEncontrado.saldoEnPesos -= dinero;
                     console.log(`Extraccion realizada, su
-                    nuevo saldo es: ${this.clientes[i].saldoEnPesos}`)
+                    nuevo saldo es: ${clienteEncontrado.saldoEnPesos}`)
                 }
                 else{
                     console.log('Dinero insuficiente')
                 }
-            }
-            }
             },
 }
 
 
-let clienteEncontrado = banco.consultarCliente('Ramon Connell');
+// let clienteEncontrado = banco.consultarCliente('Ramon Connell');
 
 // console.log(clienteEncontrado);
 
-// banco.deposito('Ramon Connell',1000);
+banco.deposito('Ramon Connell',1000);
 
 banco.extraccion('Ramon Connell',3000);
 banco.extraccion('Ramon Connell',10000);
