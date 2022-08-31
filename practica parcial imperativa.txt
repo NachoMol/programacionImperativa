@@ -1,0 +1,54 @@
+// Nivel 1
+
+// 1 - Desarrollar una función que reciba 2 numeros y retorne la suma de ambos
+// 2 - Desarrollar una función que reciba 2 numeros y 
+//      retorne la suma de ambos, si el primer parametro es mayor, 
+//      caso contrario retornar la resta.
+// 3 - Desarrollar una función que reciba 4 numeros y calcular la suma de total
+//      si el el resultado es mayor o igual a 7, retornar 'Aprobado', 
+//      caso contrario retornar 'otra chance '.
+
+// 4 - Desarrollar una función que reciba 4 numeros y calcular la suma de total
+//      si el el resultado es par, retornar la mitad del total,  
+//      caso contrario retornar el doble del total.
+
+
+ 
+ 
+//      Nivel 2
+// - Declarar 3 arrays de edades por ejemplo -> [10, 9, 8, 22, 55, 80, 5, 63, 29, 9] , luego desarrollar las siguientes funciones:
+
+// 1 - Funcion que reciba un array de edades y retorne el promedio 
+// 2 - Funcion que reciba un array de edades y retorne el mayor elemento // 80
+// 3 - Funcion que reciba un array de edades y retorne el menor elemento // 5
+// 4 - Funcion que reciba un array de edades y retorne true si encuentra algun elemento repetido o false caso contrario
+// 5 - Funcion que reciba un array de edades y una edada buscar, retorne el primer índice si encuentra coincidencia o null caso contrario
+// 6 - Funcion que reciba un array de edades y retorne un objeto literal con dos propiedades que contengan un array
+//    {
+//       edadesMenor : "// edades menor a 18",  
+//       edadesMayor : "// edades menor a 18"
+//    }
+//    Nivel 3
+
+// 1 - Desarrollar un objeto literal que contenga 5 propiedades que sean del siguiente tipo:
+//    - 2 String   
+//    - 1 Boolean
+//    - 1 Number
+//    - 1 Array
+//    - 1 Metodo que retorne un saludito
+//     * por ejemplo:
+    
+//      let canHijo = {
+//        nombre : 'Negrito',
+//        color  : 'Negrito',
+//        estaVacunado : true,
+//        edad : 10,
+//        vacunas : ['Leptospirosis', 'Hepatitis', 'Parvovirus'],
+//        saludo: function(){
+//            return 'wouf wouf wouf..'
+//        } 
+//      }
+    
+//   - Luego desarrollar una funcion que liste individualmente los elementos de la propiedad del tipo Array
+
+
