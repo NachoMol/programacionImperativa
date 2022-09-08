@@ -38,11 +38,10 @@
 let crearMatriz = () => {
     let numero = 1;
     let resultado = [];
-        for(let i = 0 ; resultado.length < 10; i++){
-            for (let j = 0; resultado[i].length < 10; j++){
-                resultado[i].push (numero);
-                console.log('agregamos un valor' + numero);
-                numero++;
+        for(let i = 0 ; i < 10; i++){
+            resultado.push([])
+            for (let j = 0; j < 10; j++){
+                resultado[i].push (numero++);
             }
         }
         return resultado;

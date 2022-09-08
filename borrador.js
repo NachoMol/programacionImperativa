@@ -1,31 +1,16 @@
-/**
- * Declara una variable que contenga una matriz
- * de 5x5 llena de puros numeros enteros y positivos
- */
+function generarMatriz10por10() {
 
- let miMatriz = [
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1]
-  ];
-  
-  /**
-   * Luego, escribe un algoritmo para sumar todos
-   * los numeros en la matriz.
-   */
-  
-  let sumarValores = (miMatriz) => {
-    let resultado = 0;
-  
-    for (let i = 0; i < miMatriz.length; i++) {
-      for (let j = 0; j < miMatriz[i].length; j++) {
-        resultado += miMatriz[i][j];
-      }
+    let matriz = [];
+    let incrementador = 1;
+    for (let filas = 0; filas < 10; filas++) {
+        matriz.push([]);
+        for (let columnas = 0; columnas < 10; columnas++) {
+            matriz[filas].push(incrementador++);
+        }
     }
-    return resultado;
-  };
-  
-  console.log(sumarValores(miMatriz));
-  
+
+    return matriz;
+}
+
+let matriz10por10 = generarMatriz10por10();
+console.table(matriz10por10);
