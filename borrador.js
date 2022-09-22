@@ -1,16 +1,27 @@
-function generarMatriz10por10() {
+const binarySearch = (arr, anio) => {
 
-    let matriz = [];
-    let incrementador = 1;
-    for (let filas = 0; filas < 10; filas++) {
-        matriz.push([]);
-        for (let columnas = 0; columnas < 10; columnas++) {
-            matriz[filas].push(incrementador++);
+    let low = 0
+
+    let high = arr.length - 1
+
+    while (low <= high) {
+        const mid = Math.floor((low + high) / 2)
+
+        const guess = arr[mid]
+
+        if(guess.edad === anio){
+            return mid
+        }
+
+        if(guess.edad > anio){
+            high = mid - 1
+        } else {
+            low = mid + 1
         }
     }
-
-    return matriz;
+    return null
 }
 
-let matriz10por10 = generarMatriz10por10();
-console.table(matriz10por10);
+filtrarPeople(personas)
+
+console.log( personas[binarySearch(personas, 83)].nombre);
